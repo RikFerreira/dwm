@@ -100,5 +100,5 @@ sudo pacman -S libx11 libxft libxinerama
 #### Debian
 
 ``` bash
-sudo apt install libx11 libxft libxinerama
+sudo apt install libx11-dev libxft-dev libxinerama-dev
 ```
