@@ -1,0 +1,12 @@
+---
+title: Dinamic Window Manager
+output: md_document
+---
+
+# Overview
+
+# Features
+
+# Hotkeys
+
+# How to install
