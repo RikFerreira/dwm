@@ -91,14 +91,16 @@ These headers may appear in errors while trying to compile dwm:
 #include <X11/extensions/Xinerama.h>
 ```
 
+The icons in the tag bar are from the `font-awesome` package.
+
 #### Arch
 
 ``` bash
-sudo pacman -S libx11 libxft libxinerama
+sudo pacman -S libx11 libxft libxinerama ttf-font-awesome
 ```
 
 #### Debian
 
 ``` bash
-sudo apt install libx11-dev libxft-dev libxinerama-dev
+sudo apt install libx11-dev libxft-dev libxinerama-dev fonts-font-awesome
 ```
