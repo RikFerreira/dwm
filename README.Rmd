@@ -1,5 +1,4 @@
 ---
-title: Dinamic Window Manager
 output: md_document
 ---
 
@@ -10,3 +9,5 @@ output: md_document
 # Hotkeys
 
 # How to install
+
+## Dependencies

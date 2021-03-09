@@ -5,3 +5,5 @@
 # Hotkeys
 
 # How to install
+
+## Dependencies
