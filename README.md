@@ -6,9 +6,9 @@
 ## Overview
 
 Dwm is part of suckless tools for desktop. It is intended to be a simple
-and lightweight, user-oriented window manager, allowing heavily
-customization. Thereby, this is my personal build of dwm, with the
-patches and settings that I think that are most useful to my workflow.
+lightweight window manager, allowing heavy customization. Thereby, this
+is my personal build of dwm, with the patches and settings that I think
+that are most useful to my workflow.
 
 ## Features
 
