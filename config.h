@@ -117,7 +117,7 @@ ResourcePref resources[] = {
 };
 
 
-#include "shiftview.c"
+#include "shiftviewclients.c"
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -132,8 +132,8 @@ static Key keys[] = {
 	{ MODKEY          ,             XK_q,      killclient,     {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
-    { MODKEY,                       XK_Tab,     shiftview,      { .i = +1 } },
-    { MODKEY|ShiftMask,             XK_Tab,     shiftview,      { .i = -1 } },
+    { MODKEY,                       XK_Tab,     shiftviewclients,      { .i = +1 } },
+    { MODKEY|ShiftMask,             XK_Tab,     shiftviewclients,      { .i = -1 } },
 
     /* layout                                                           */
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
@@ -142,10 +142,10 @@ static Key keys[] = {
 	{ MODKEY,                       XK_r,      resetlayout,    {0} },
 	{ MODKEY,                       XK_space,  zoom,           {0} }, /* maybe I will omit this line because of stack patch */
 	{ MODKEY|ShiftMask,             XK_f,      togglefullscr,  {0} },
-	{ MODKEY,                       XK_F1,      setlayout,      {.v = &layouts[0]} },
-	{ MODKEY,                       XK_F2,      setlayout,      {.v = &layouts[1]} },
-	{ MODKEY,                       XK_F3,      setlayout,      {.v = &layouts[2]} },
-	{ MODKEY,                       XK_F4,      setlayout,      {.v = &layouts[3]} },
+	{ MODKEY,                       XK_F5,      setlayout,      {.v = &layouts[0]} },
+	{ MODKEY,                       XK_F6,      setlayout,      {.v = &layouts[1]} },
+	{ MODKEY,                       XK_F7,      setlayout,      {.v = &layouts[2]} },
+	{ MODKEY,                       XK_F8,      setlayout,      {.v = &layouts[3]} },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)

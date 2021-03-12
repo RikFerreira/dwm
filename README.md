@@ -5,10 +5,10 @@
 
 ## Overview
 
-Dwm is part of suckless tools for desktop. It is intended to be a simple
+Dwm is part of suckless tools for desktop. Its intention to be a simple
 lightweight window manager, allowing heavy customization. Thereby, this
-is my personal build of dwm, with the patches and settings that I think
-that are most useful to my workflow.
+is my personal build of dwm, with the patches and settings that are most
+useful to my workflow.
 
 ## Features
 
@@ -59,18 +59,18 @@ that are most useful to my workflow.
 -   `Super+{1-9}`: Navigate through tags.
 -   `Super+Shift+{1-9}`: Move client to specific tag.
 -   `Super+Control+Shift+{1-9}`: Add client to specific tag.
--   `Super+Tab`: Go to next tag.
--   `Super+Shift+Tab`: Go to previous tag.
+-   `Super+Tab`: Go to next active tag.
+-   `Super+Shift+Tab`: Go to previous active tag.
 -   `Super+0`: Show all tags.
 -   `Super+Shift+0`: Add client to all tags.
 -   `Super+b`: Toggle bar
 -   `Super+r`: Reset layout
 -   `Super+Space`: Zoom client
 -   `Super+Shift+f`: Toggle fullscreen
--   `Super+F1`: Tile layout.
--   `Super+F2`: Bottom stack layout.
--   `Super+F3`: Centered master layout.
--   `Super+F4`: Tree layout.
+-   `Super+F5`: Tile layout.
+-   `Super+F6`: Bottom stack layout.
+-   `Super+F7`: Centered master layout.
+-   `Super+F8`: Tree layout.
 -   `Super+n`: Toggle scratchpad.
 
 ## How to install
