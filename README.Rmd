@@ -124,3 +124,4 @@ sudo pacman -S libx11 libxft libxinerama ttf-font-awesome
 sudo apt install libx11-dev libxft-dev libxinerama-dev fonts-font-awesome
 ```
 
+Notice that are some bindings to scripts that aren't in this repository. You may want to remove those because they will look in your `$PATH` for an executable with their names and it may not work as expected. I reinforce that this is my personal build to this software and it is designed to work with other elements of my desktop.
