@@ -120,44 +120,54 @@ ResourcePref resources[] = {
 #include "shiftviewclients.c"
 
 static Key keys[] = {
-	/* modifier                     key        function        argument */
+	/* modifier                     key         function                argument    */
 
-    /* spawn                                                            */
-	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
-	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
+    /* spawn                                                                         */
+	{ MODKEY,                       XK_d,       spawn,                  {.v = dmenucmd } },
+	{ MODKEY,                       XK_Return,  spawn,                  {.v = termcmd } },
 
-    /* navigation                                                       */
-	STACKKEYS(MODKEY,                          focus)
-	STACKKEYS(MODKEY|ShiftMask,                push)
-	{ MODKEY          ,             XK_q,      killclient,     {0} },
-	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
-	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
-    { MODKEY,                       XK_Tab,     shiftviewclients,      { .i = +1 } },
-    { MODKEY|ShiftMask,             XK_Tab,     shiftviewclients,      { .i = -1 } },
+    /* navigation                                                                    */
+	STACKKEYS(MODKEY,                           focus)
+	STACKKEYS(MODKEY|ShiftMask,                 push)
+	{ MODKEY          ,             XK_q,       killclient,             {0} },
+	{ MODKEY,                       XK_0,       view,                   {.ui = ~0 } },
+	{ MODKEY|ShiftMask,             XK_0,       tag,                    {.ui = ~0 } },
+    { MODKEY,                       XK_Tab,     shiftviewclients,       { .i = +1 } },
+    { MODKEY|ShiftMask,             XK_Tab,     shiftviewclients,       { .i = -1 } },
 
-    /* layout                                                           */
-	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
-	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
-	{ MODKEY,                       XK_b,      togglebar,      {0} },
-	{ MODKEY,                       XK_r,      resetlayout,    {0} },
-	{ MODKEY,                       XK_space,  zoom,           {0} }, /* maybe I will omit this line because of stack patch */
-	{ MODKEY|ShiftMask,             XK_f,      togglefullscr,  {0} },
-	{ MODKEY,                       XK_F5,      setlayout,      {.v = &layouts[0]} },
-	{ MODKEY,                       XK_F6,      setlayout,      {.v = &layouts[1]} },
-	{ MODKEY,                       XK_F7,      setlayout,      {.v = &layouts[2]} },
-	{ MODKEY,                       XK_F8,      setlayout,      {.v = &layouts[3]} },
-	TAGKEYS(                        XK_1,                      0)
-	TAGKEYS(                        XK_2,                      1)
-	TAGKEYS(                        XK_3,                      2)
-	TAGKEYS(                        XK_4,                      3)
-	TAGKEYS(                        XK_5,                      4)
-	TAGKEYS(                        XK_6,                      5)
-	TAGKEYS(                        XK_7,                      6)
-	TAGKEYS(                        XK_8,                      7)
-	TAGKEYS(                        XK_9,                      8)
+    /* layout                                                                       */
+	{ MODKEY,                       XK_h,       setmfact,               {.f = -0.05} },
+	{ MODKEY,                       XK_l,       setmfact,               {.f = +0.05} },
+	{ MODKEY,                       XK_b,       togglebar,              {0} },
+	{ MODKEY,                       XK_r,       resetlayout,            {0} },
+	{ MODKEY,                       XK_space,   zoom,                   {0} }, /* maybe I will omit this line because of stack patch */
+	{ MODKEY|ShiftMask,             XK_f,       togglefullscr,          {0} },
+	{ MODKEY,                       XK_F5,      setlayout,              {.v = &layouts[0]} },
+	{ MODKEY,                       XK_F6,      setlayout,              {.v = &layouts[1]} },
+	{ MODKEY,                       XK_F7,      setlayout,              {.v = &layouts[2]} },
+	{ MODKEY,                       XK_F8,      setlayout,              {.v = &layouts[3]} },
+
+    /* utilities                                                                    */
+	{ MODKEY,                       XK_F9,      spawn,                  SHCMD("mountdrive") },
+	{ MODKEY|ShiftMask,             XK_F9,      spawn,                  SHCMD("unmountdrive") },
+	{ MODKEY,                       XK_F10,     spawn,                  SHCMD("sysupdate") },
+	{ MODKEY,                       XK_F12,     spawn,                  SHCMD("killprocess") },
+	{ MODKEY|ShiftMask,             XK_F12,     spawn,                  SHCMD("power") },
+	{ MODKEY,                       XK_Print,   spawn,                  SHCMD("screenshot") },
+	{ MODKEY|ShiftMask,             XK_Print,   spawn,                  SHCMD("recordscreen") },
+
+	TAGKEYS(                        XK_1,                               0)
+	TAGKEYS(                        XK_2,                               1)
+	TAGKEYS(                        XK_3,                               2)
+	TAGKEYS(                        XK_4,                               3)
+	TAGKEYS(                        XK_5,                               4)
+	TAGKEYS(                        XK_6,                               5)
+	TAGKEYS(                        XK_7,                               6)
+	TAGKEYS(                        XK_8,                               7)
+	TAGKEYS(                        XK_9,                               8)
 
     /* misc                                                             */
-	{ MODKEY,                       XK_n,  togglescratch,  {.v = scratchpadcmd } },
+	{ MODKEY,                       XK_n,       togglescratch,          {.v = scratchpadcmd } },
     /*
      * icebucket
      *

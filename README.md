@@ -71,6 +71,13 @@ useful to my workflow.
 -   `Super+F6`: Bottom stack layout.
 -   `Super+F7`: Centered master layout.
 -   `Super+F8`: Tree layout.
+-   `Super+F9`: Mount drive.
+-   `Super+Shift+F9`: Unmount drive.
+-   `Super+F10`: System update.
+-   `Super+F12`: Kill process.
+-   `Super+Shift+F12`: Power off computer.
+-   `Super+Print`: Take screenshot.
+-   `Super+Shift+Print`: Record desktop.
 -   `Super+n`: Toggle scratchpad.
 
 ## How to install
