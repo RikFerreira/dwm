@@ -66,7 +66,7 @@ useful to my workflow.
 -   `Super+b`: Toggle bar
 -   `Super+r`: Reset layout
 -   `Super+Space`: Zoom client
--   `Super+Shift+f`: Toggle fullscreen
+-   `Super+f`: Toggle fullscreen
 -   `Super+F5`: Tile layout.
 -   `Super+F6`: Bottom stack layout.
 -   `Super+F7`: Centered master layout.

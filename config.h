@@ -44,7 +44,7 @@ static const Rule rules[] = {
 /* layout(s) */
 static float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
 static int nmaster     = 1;    /* number of clients in master area */
-static int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
+static int resizehints = 0;    /* 1 means respect size hints in tiled resizals */ /* set it to 0 if you want st to fit entirelly on the screen */
 
 #define FORCE_VSPLIT 1  /* nrowgrid layout: force two clients to always split vertically */
 #include "vanitygaps.c"
@@ -141,7 +141,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_b,       togglebar,              {0} },
 	{ MODKEY,                       XK_r,       resetlayout,            {0} },
 	{ MODKEY,                       XK_space,   zoom,                   {0} }, /* maybe I will omit this line because of stack patch */
-	{ MODKEY|ShiftMask,             XK_f,       togglefullscr,          {0} },
+	{ MODKEY          ,             XK_f,       togglefullscr,          {0} },
 	{ MODKEY,                       XK_F5,      setlayout,              {.v = &layouts[0]} },
 	{ MODKEY,                       XK_F6,      setlayout,              {.v = &layouts[1]} },
 	{ MODKEY,                       XK_F7,      setlayout,              {.v = &layouts[2]} },
