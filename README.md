@@ -29,7 +29,7 @@ useful to my workflow.
 -   Scratchpad for quick annotations (useful with R and Neovim).
 -   Firefox spawn in tag 1, RStudio spawn in tag 2 and Telegram spawn in
     tag 9. Terminals can spawn in any tag.
--   sxiv and display (imagemagick) floats.
+-   sxiv, display (imagemagick) and mpv clients float.
 
 ## Screenshots
 

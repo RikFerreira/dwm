@@ -143,6 +143,9 @@ static Key keys[] = {
 	{ MODKEY,                       XK_r,       resetlayout,            {0} },
 	{ MODKEY,                       XK_space,   zoom,                   {0} }, /* maybe I will omit this line because of stack patch */
 	{ MODKEY          ,             XK_f,       togglefullscr,          {0} },
+
+	{ MODKEY,                       XK_F2,      spawn,                  SHCMD("torrent") },
+
 	{ MODKEY,                       XK_F5,      setlayout,              {.v = &layouts[0]} },
 	{ MODKEY,                       XK_F6,      setlayout,              {.v = &layouts[1]} },
 	{ MODKEY,                       XK_F7,      setlayout,              {.v = &layouts[2]} },
@@ -152,8 +155,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_F9,      spawn,                  SHCMD("mountdrive") },
 	{ MODKEY|ShiftMask,             XK_F9,      spawn,                  SHCMD("unmountdrive") },
 	{ MODKEY,                       XK_F10,     spawn,                  SHCMD("sysupdate") },
-	{ MODKEY,                       XK_F12,     spawn,                  SHCMD("killprocess") },
-	{ MODKEY|ShiftMask,             XK_F12,     spawn,                  SHCMD("power") },
+	{ MODKEY,                       XK_F12,     spawn,                  SHCMD("power") },
+	{ MODKEY|ShiftMask,             XK_F12,     spawn,                  SHCMD("killprocess") },
 	{ MODKEY,                       XK_Print,   spawn,                  SHCMD("screenshot") },
 	{ MODKEY|ShiftMask,             XK_Print,   spawn,                  SHCMD("recordscreen") },
 
