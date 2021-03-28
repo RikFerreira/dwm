@@ -40,6 +40,7 @@ static const Rule rules[] = {
 	{ "Display",            NULL,       NULL,           0,          1,           -1 },
 	{ "Sxiv",               NULL,       NULL,           0,          1,           -1 },
 	{ "mpv",                NULL,       NULL,           0,          1,           -1 },
+	{ "R_x11",              NULL,       NULL,           0,          1,           -1 },
 };
 
 /* layout(s) */
@@ -159,6 +160,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_F12,     spawn,                  SHCMD("killprocess") },
 	{ MODKEY,                       XK_Print,   spawn,                  SHCMD("screenshot") },
 	{ MODKEY|ShiftMask,             XK_Print,   spawn,                  SHCMD("recordscreen") },
+	{ MODKEY,                       XK_equal,   spawn,                  SHCMD("pactl set-sink-volume 0 +5% && pkill -RTMIN+10 dwmblocks") },
+	{ MODKEY,                       XK_minus,   spawn,                  SHCMD("pactl set-sink-volume 0 -5% && pkill -RTMIN+10 dwmblocks") },
 
 	TAGKEYS(                        XK_1,                               0)
 	TAGKEYS(                        XK_2,                               1)
