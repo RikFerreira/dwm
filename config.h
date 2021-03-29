@@ -145,6 +145,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_space,   zoom,                   {0} }, /* maybe I will omit this line because of stack patch */
 	{ MODKEY          ,             XK_f,       togglefullscr,          {0} },
 
+	{ MODKEY,                       XK_F1,      spawn,                  SHCMD("mansplain") },
 	{ MODKEY,                       XK_F2,      spawn,                  SHCMD("torrent") },
 
 	{ MODKEY,                       XK_F5,      setlayout,              {.v = &layouts[0]} },

@@ -67,6 +67,8 @@ useful to my workflow.
 -   `Super+r`: Reset layout
 -   `Super+Space`: Zoom client
 -   `Super+f`: Toggle fullscreen
+-   `Super+F1`: A man spawns to explain you something
+-   `Super+F2`: Add and remove torrents.
 -   `Super+F5`: Tile layout.
 -   `Super+F6`: Bottom stack layout.
 -   `Super+F7`: Centered master layout.
